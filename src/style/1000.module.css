@@ -1,0 +1,12 @@
+/* тема тарифа 1000 */
+
+.card_header{
+    font-size: 18px;
+    color: #d8dae5;
+    background-color: #282f37;
+}
+
+.card_price{
+    color: #eefeff;
+    background-color: #333a44;
+}

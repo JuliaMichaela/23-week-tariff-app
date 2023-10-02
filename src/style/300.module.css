@@ -1,0 +1,12 @@
+/* тема тарифа 300 */
+
+.card_header{
+    font-size: 18px;
+    color: #d0e7ed;
+    background-color: #229cab;
+}
+
+.card_price{
+    color: #eefeff;
+    background-color:#2cc1d5;
+}

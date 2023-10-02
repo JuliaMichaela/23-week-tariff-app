@@ -1,0 +1,12 @@
+/* тема тарифа 550 */
+
+.card_header{
+    font-size: 18px;
+    color: #ffe8da;
+    background-color: #c4554e;
+}
+
+.card_price{
+    color: #eefeff;
+    background-color: #f46a5f;
+}
