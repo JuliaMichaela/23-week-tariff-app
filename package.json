@@ -2,8 +2,7 @@
   "name": "tariff-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://juliamichaela.github.io/23-week-tariff-app
-  /",
+  "homepage": "https://juliamichaela.github.io/23-week-tariff-app/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
