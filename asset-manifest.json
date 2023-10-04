@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/23-week-tariff-app/static/css/main.95095590.css",
+    "main.js": "/23-week-tariff-app/static/js/main.e47f90a3.js",
+    "index.html": "/23-week-tariff-app/index.html",
+    "main.95095590.css.map": "/23-week-tariff-app/static/css/main.95095590.css.map",
+    "main.e47f90a3.js.map": "/23-week-tariff-app/static/js/main.e47f90a3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.95095590.css",
+    "static/js/main.e47f90a3.js"
+  ]
+}
