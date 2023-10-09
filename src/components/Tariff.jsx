@@ -9,7 +9,6 @@ export default function Tariff(props) {
         setIsSelected(!isSelected);
     }
 
-
     const classCard = (isSelected ? "selected" : "");
 
     return (
