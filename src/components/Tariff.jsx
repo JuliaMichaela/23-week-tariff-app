@@ -1,14 +1,14 @@
 import React, { useState } from "react";
 import "../styles/tariff.css";
 
-export default function Tariff(props, card, isSelected, setId) {
+export default function Tariff(props, isSelected, setId) {
 
     const classCard = (isSelected ? "selected" : "");
     // const [isSelected, setIsSelected] = useState(false);
 
     function handleChange() {
         // setIsSelected(!isSelected);
-        setId(card.id);
+        setId(props.card.id);
     }
 
 
