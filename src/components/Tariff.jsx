@@ -1,20 +1,21 @@
 import React, { useState } from "react";
 import "../styles/tariff.css";
 
-export default function Tariff(props, isSelected, setId) {
+export default function Tariff(props) {
 
+    const { card, isSelected } = props;
     const classCard = (isSelected ? "selected" : "");
     // const [isSelected, setIsSelected] = useState(false);
 
     function handleChange() {
         // setIsSelected(!isSelected);
-        setId(props.card.id);
+        props.setId(props.card.id);
     }
 
 
     return (
         <div className={`card ${classCard}`} onClick={handleChange}>
-            <header className={`card_header ${props.theme.card_header}`}>Безлимитный  {props.rate}</header>
+            <header className={`card_header ${props.theme.card_header}`}>Безлимитный{props.rate}</header>
             <div className={`card_price ${props.theme.card_price}`}>
                 <p className="card_value">руб </p>
                 <p className="card_number">{props.rate}</p>
