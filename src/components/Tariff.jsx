@@ -1,28 +1,23 @@
-import React, { useState } from "react";
 import "../styles/tariff.css";
 
 export default function Tariff(props) {
-
-    const { card, isSelected } = props;
+    const { card, isSelected, setId, theme } = props;
     const classCard = (isSelected ? "selected" : "");
-    // const [isSelected, setIsSelected] = useState(false);
 
     function handleChange() {
-        // setIsSelected(!isSelected);
-        props.setId(props.card.id);
+        setId(card.id);
     }
-
 
     return (
         <div className={`card ${classCard}`} onClick={handleChange}>
-            <header className={`card_header ${props.theme.card_header}`}>Безлимитный{props.rate}</header>
-            <div className={`card_price ${props.theme.card_price}`}>
-                <p className="card_value">руб </p>
-                <p className="card_number">{props.rate}</p>
-                <p className="card_date"> /мес</p>
+            <header className={`card_header ${theme.card_header}`}>{card.name}</header>
+            <div className={`card_price ${theme.card_price}`}>
+                <p className="card_value">{card.priceTextHigh}</p>
+                <p className="card_number">{card.price}</p>
+                <p className="card_date">{card.priceTextLow}</p>
             </div>
-            <div className="card_speed">До {props.speed} Мбит/сек </div>
-            <footer className="card_footer">Объём включенного трафика не ограничен</footer>
+            <div className="card_speed">{card.speed}</div>
+            <footer className="card_footer">{card.condition}</footer>
         </div>
     );
 }
